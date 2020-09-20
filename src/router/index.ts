@@ -23,14 +23,12 @@ const routes: Array<RouteConfig> = [
   {
     path: "/",
     name: "Home",
-    beforeEnter: guardMyroute,
     meta: { title: 'Home' },
     component: () => import("../views/Home.vue"),
   },
   {
     path: "/about",
     name: "About",
-    beforeEnter: guardMyroute,
     component: () => import("../views/About.vue"),
   },
   {
